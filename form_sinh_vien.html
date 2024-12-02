@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Khai Báo Lý Lịch Sinh Viên</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Khai Báo Lý Lịch Sinh Viên</h1>
+    <form>
+      <label for="name">Họ và tên:</label>
+      <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
+
+      <label for="id">Mã sinh viên:</label>
+      <input type="text" id="id" name="id" placeholder="Nhập mã sinh viên" required>
+
+      <label for="dob">Ngày sinh:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label>Giới tính:</label>
+      <div class="gender-options">
+        <input type="radio" id="male" name="gender" value="Nam" required>
+        <label for="male">Nam</label>
+        <input type="radio" id="female" name="gender" value="Nữ">
+        <label for="female">Nữ</label>
+      </div>
+
+      <label for="address">Địa chỉ:</label>
+      <input type="text" id="address" name="address" placeholder="Nhập địa chỉ">
+
+      <label for="phone">Điện thoại:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Nhập email">
+
+      <label for="class">Lớp:</label>
+      <select id="class" name="class" required>
+        <option value="">Chọn lớp</option>
+        <option value="C101">C101</option>
+        <option value="C102">C102</option>
+        <option value="C103">C103</option>
+      </select>
+
+      <div class="button-group">
+        <button type="submit">Lưu</button>
+        <button type="reset">Làm mới</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
